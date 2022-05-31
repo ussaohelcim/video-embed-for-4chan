@@ -1,0 +1,20 @@
+{
+    "name": "Embed for 4chan",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "An extension to embed videos into 4chan.",
+	"action":{
+		"default_popup": "popup/popup.html"
+	},
+	"background": {
+		"service_worker": "scripts/background.js"
+	},
+	"permissions":[
+		"tabs",
+		"scripting",
+		"storage"
+	],
+	"host_permissions": [
+        "https://boards.4channel.org/*/*/*"
+    ]
+}
